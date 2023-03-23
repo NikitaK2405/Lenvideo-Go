@@ -24,7 +24,7 @@ def get_video_len(path_directory):
             main()
             return
         else:
-            print(Fore.YELLOW + f"[+] Найдено фалов: {len(clip_to_merge)}")
+            print(Fore.YELLOW + f"[+] Найдено файлов: {len(clip_to_merge)}")
             merge_final = concatenate_videoclips(clip_to_merge)
             print(Fore.YELLOW + f"[+] Общая длительность найденных видеофайлов: "
                                 f"{time.strftime('%H:%M:%S', time.gmtime(merge_final.duration))}")
@@ -43,8 +43,11 @@ def main():
                                              "   >>> ")
     if user_change == "0":
         sys.exit()
-    if user_change == "1":
+    elif user_change == "1":
         get_video_len(input(Fore.LIGHTWHITE_EX + "\n[+] Введите путь к папке с файлами: "))
+    else:
+        print(Fore.RED + "\n[-] Неопознанное действие: повторите попытку")
+        main()
 
 
 if __name__ == "__main__":

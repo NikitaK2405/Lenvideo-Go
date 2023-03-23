@@ -24,7 +24,7 @@ def merge_video_clip(path_directory, res_name):
             main()
             return
         else:
-            print(Fore.YELLOW + f"[+] Найдено фалов: {len(clip_to_merge)}")
+            print(Fore.YELLOW + f"[+] Найдено файлов: {len(clip_to_merge)}")
             merge_final = concatenate_videoclips(clip_to_merge)
             print(Fore.YELLOW + f"[+] Длительность объединяемого видео: "
                                 f"{time.strftime('%H:%M:%S', time.gmtime(merge_final.duration))}\n[+] Начинаю "
