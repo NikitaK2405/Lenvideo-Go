@@ -1,6 +1,6 @@
 # Lenvideo-Go
-Ленвидео-Go - лёгкий и функциональный инструмент для работы с аудио, видео и изображениями.
-Представлен в двух версиях: полной и специализированной. Вторая сделана по заказу и нужна только для нахождения общей продолжительности видеофайлов в папке.
-Спасибо за использование.
+Lenvideo-Go is a light and functional tool for working with audio, video and images.
+Presented in two versions: complete and specialized. The second is made to order and is needed only to find the total duration of video files in a folder.
+Thanks for using.
 
-Примечание. Если проект не работает, установите библиотеки Colorama и Moviepy.
+Note. If the project doesn't work, install libraries "Colorama" and "Moviepy".
